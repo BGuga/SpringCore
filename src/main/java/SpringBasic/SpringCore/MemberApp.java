@@ -1,14 +1,16 @@
 package SpringBasic.SpringCore;
 
-import SpringBasic.SpringCore.member.Gradle;
+import SpringBasic.SpringCore.member.Grade;
 import SpringBasic.SpringCore.member.Member;
 import SpringBasic.SpringCore.member.MemberService;
 import SpringBasic.SpringCore.member.MemberServiceImpl;
 
 public class MemberApp {
     public static void main(String[] args) {
-        MemberService memberService=new MemberServiceImpl();
-        Member member = new Member(1L, "memberA", Gradle.VIP);
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
+//        MemberService memberService=new MemberServiceImpl();
+        Member member = new Member(1L, "memberA", Grade.VIP);
         memberService.join(member);
 
         Member findMember = memberService.findMember(1L);

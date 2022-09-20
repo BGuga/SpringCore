@@ -1,6 +1,6 @@
 package SpringBasic.SpringCore.member;
 
-public enum Gradle {
+public enum Grade {
     BASIC,
     VIP
 }
