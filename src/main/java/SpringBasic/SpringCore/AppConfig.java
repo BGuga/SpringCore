@@ -2,7 +2,6 @@ package SpringBasic.SpringCore;
 
 import SpringBasic.SpringCore.discount.DiscountPolicy;
 import SpringBasic.SpringCore.discount.FixDiscountPolicy;
-import SpringBasic.SpringCore.discount.RateDiscountPolicy;
 import SpringBasic.SpringCore.member.MemberRepository;
 import SpringBasic.SpringCore.member.MemberService;
 import SpringBasic.SpringCore.member.MemberServiceImpl;
