@@ -5,11 +5,10 @@
     <bean id="memberService" class="SpringBasic.SpringCore.member.MemberServiceImpl">
         <constructor-arg name="memberRepository" ref="memberRepository" />
     </bean>
-    <bean id="memberRepository"
-          class="SpringBasic.SpringCore.member.MemoryMemberRepository" />
+    <bean id="memberRepository" class="SpringBasic.SpringCore.member.MemoryMemberRepository" />
     <bean id="orderService" class="SpringBasic.SpringCore.order.OrderServiceImpl">
         <constructor-arg name="memberRepository" ref="memberRepository" />
         <constructor-arg name="discountPolicy" ref="discountPolicy" />
     </bean>
-    <bean id="discountPolicy" class="SpringBasic.SpringCore.discount.RateDiscountPolicy" />
+    <bean id="discountPolicy" class="SpringBasic.SpringCore.discount.FixDiscountPolicy" />
 </beans>
