@@ -8,6 +8,9 @@ import SpringBasic.SpringCore.member.MemberServiceImpl;
 import SpringBasic.SpringCore.member.MemoryMemberRepository;
 import SpringBasic.SpringCore.order.OrderService;
 import SpringBasic.SpringCore.order.OrderServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
