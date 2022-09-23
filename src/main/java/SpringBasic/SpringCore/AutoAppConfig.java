@@ -1,6 +1,7 @@
 package SpringBasic.SpringCore;
 
 import SpringBasic.SpringCore.discount.DiscountPolicy;
+import SpringBasic.SpringCore.discount.RateDiscountPolicy;
 import SpringBasic.SpringCore.member.MemberRepository;
 import SpringBasic.SpringCore.member.MemoryMemberRepository;
 import SpringBasic.SpringCore.order.Order;
@@ -16,5 +17,4 @@ import org.springframework.context.annotation.FilterType;
 @ComponentScan(
         excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Configuration.class))
 public class AutoAppConfig {
-
 }
